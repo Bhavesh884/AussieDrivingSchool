@@ -1,0 +1,41 @@
+/* Custom styles for the React Big Calendar buttons */
+
+/* Style for all toolbar buttons (inactive buttons) */
+.rbc-toolbar{
+  width: 100%;
+  display: flex;
+  gap: 4;
+  justify-content: space-between;
+  align-items: center;
+}
+.rbc-toolbar button {
+  background-color: #e0f2fe; /* Light blue */
+  color: #1e40af; /* Dark blue */
+  border: none;
+  padding: 8px 12px;
+  margin: 4px 4px;
+  border-radius: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for inactive buttons */
+.rbc-toolbar button:hover {
+  background-color: #60a5fa; /* Blue when hovered */
+  color: white;
+}
+
+/* Style for the active button (the selected view button) */
+.rbc-toolbar button.rbc-active {
+  background-color: #1e40af; /* Dark blue */
+  color: white;
+  font-weight: bold; /* Optional: makes the active button stand out */
+}
+
+/* Style for disabled buttons (e.g., no events to go to) */
+.rbc-toolbar button:disabled {
+  background-color: #d1d5db; /* Light gray */
+  color: #6b7280; /* Gray text */
+  cursor: not-allowed;
+}
