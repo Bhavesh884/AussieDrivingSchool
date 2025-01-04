@@ -2,10 +2,10 @@ import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 import { useLoading } from "../../LoadingContext";
 
 const s3Client = new S3Client({
-    region: "ap-south-1", // Replace with your S3 bucket region
+    region: "", // Replace with your S3 bucket region
     credentials: {
-        accessKeyId: "AKIA3ISBWBDSKOMOCW5L", // Replace with your access key
-        secretAccessKey: "TyxV2wS4Ku1OdgWi81X2XHlrraHtFwu+B7F+1Q2m", // Replace with your secret key
+        accessKeyId: "", // Replace with your access key
+        secretAccessKey: "", // Replace with your secret key
     },
 });
 export const handleUploadImage = async (file, filename) => {
